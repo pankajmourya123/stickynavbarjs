@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sticky navbar</title>
+    <style>
+        body{
+            padding: 10px 0px;
+            margin: 0;
+
+        }
+        #logo{
+      background-color:cadetblue;
+        }
+        #header{
+            text-align: center;
+        position: relative;
+        
+            
+        }
+        #menu-bar{
+            background-color: cadetblue;
+            text-align: center;
+            width: 100%;
+            display: block;
+        }
+        #menu-bar li{
+            display: inline-block;
+            margin: 10px;
+            font-size: 20px;
+            color: white;
+        }
+        #container{
+            text-align: center;
+            padding:  0px 100px;
+        }
+       #img{
+            width: 50%;
+       } 
+       p{
+        text-align: justify;
+       }
+       .sticky{
+        position: fixed;
+        top: 0;
+      
+    }
+        </style>
+</head>
+<body>
+    <div id="header">
+        <img src="images/flipkart-plus.png" alt="" id="logo">
+    </div>
+    <div id="menu-bar" >
+        <ul type="none">
+             <li>About us</li>
+             <li>Our Team</li>
+             <li>Contact us</li>
+             
+        </ul>
+    </div>
+    <div id="container">
+        <h1>About Us</h1>
+        <div class="img">
+            <img src="images\images about as.jpg" alt="" id="img">
+        </div>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur obcaecati nobis mollitia atque repellat voluptatum illo asperiores exercitationem itaque qui temporibus fuga iste, dolore enim sequi impedit iusto nesciunt dolorum dignissimos blanditiis odio, illum ipsa. Consectetur quis accusamus provident? Fugiat in odit obcaecati nulla temporibus totam error veritatis dolorum ducimus assumenda cupiditate necessitatibus corporis, ex alias eius quos dolores, iusto similique, perspiciatis unde aliquam modi voluptatem at? Autem earum libero soluta repudiandae animi placeat distinctio blanditiis. Voluptatum deserunt reiciendis eaque accusantium sint nulla totam! Suscipit officiis libero harum facere odit nam esse magni officia animi iusto natus ducimus consectetur architecto voluptatum aliquid maiores maxime sequi, cupiditate exercitationem placeat nesciunt. Dolore aperiam tempora autem quam earum hic dolorem quaerat enim? Iure, facilis quod corporis, voluptas, perspiciatis molestiae veritatis sunt soluta dignissimos itaque aperiam tenetur tempore non quae ea explicabo reprehenderit! Perspiciatis, enim debitis tempore, commodi fugit, nesciunt reiciendis autem voluptatum veniam neque repellat laudantium possimus inventore ratione dolores at! Rem excepturi recusandae molestias quibusdam, dolore impedit fugit atque exercitationem itaque consequuntur. A corrupti quia fugit voluptatum placeat? Tenetur eligendi ad debitis cupiditate ab expedita fuga deleniti sed quae autem quis dicta quisquam ut, vel doloribus hic, dignissimos et fugiat pariatur. Sed, enim hic nihil doloribus beatae optio corrupti at autem eaque rem aliquam dolorum est facilis officiis eveniet? Dolor, commodi hic obcaecati assumenda laborum officiis reiciendis excepturi quam nisi, molestiae in totam accusamus distinctio ullam, modi aliquid asperiores. Tempore magni qui vero id soluta deleniti officia ullam minima ipsam rem neque iure suscipit fugit corporis error obcaecati laborum ducimus quibusdam debitis, in, quis fugiat. Consequuntur, adipisci, doloremque rem quasi velit molestiae ex, animi placeat aspernatur ducimus voluptate sunt debitis atque? Sit alias numquam recusandae at beatae blanditiis, minima veritatis aliquam? Et enim, nemo labore est molestiae tempora autem nam mollitia dolore harum vel? Voluptatum aut non accusantium. Explicabo adipisci eum eaque quod maiores modi non minus, vitae neque itaque provident. Laudantium dolor repudiandae molestias! Mollitia, placeat. Nulla provident placeat rem tenetur nemo! Consequatur itaque porro necessitatibus, autem magni vitae. Quisquam vel ut voluptatem excepturi praesentium aliquid dignissimos accusamus quidem accusantium delectus rerum iure provident maiores, veritatis, temporibus, sint suscipit esse placeat quibusdam cupiditate. Exercitationem quaerat totam ad asperiores cupiditate incidunt possimus delectus dicta similique voluptatem ratione nostrum nisi magni repudiandae, sapiente nulla id. Temporibus molestias eos corrupti, distinctio cum sapiente laudantium. Itaque nostrum ut ex quia odio totam, atque tempore incidunt impedit aliquam quos hic, animi libero pariatur iste omnis eaque corrupti corporis voluptatibus architecto aliquid? Amet ad quasi veritatis libero atque obcaecati pariatur minima maxime expedita recusandae nemo magnam dignissimos officiis, harum, eos voluptate! Dolorum explicabo a quibusdam est eius cumque minima unde quisquam earum. Ducimus consequuntur iusto natus voluptatum laudantium? Veritatis dolorem cum nisi voluptatem repellendus nihil est reiciendis sunt itaque, ad natus tempora quidem et voluptates deserunt fuga rerum corporis esse nobis error! Dolores quidem nesciunt, doloremque minus dicta sequi iste esse dignissimos facilis fugit at veniam. Architecto quasi cumque porro. Beatae placeat itaque minus dolorem neque nihil?
+         </p>
+    </div>
+</body>
+<script>
+    let menu=document.getElementById("menu-bar")
+    window.addEventListener('scroll',function(){
+        if(window.pageYOffset>=70){
+            console.log("ok")
+            menu.classList.add('sticky')
+        }
+        else{
+            menu.classList.remove('sticky')
+        }
+    })
+</script>
+</html>
